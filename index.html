@@ -1,0 +1,185 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>BioInterfaces</title>
+</head>
+<body>
+
+    <div class="navbar">
+     
+        <a href="">ABOUT</a>
+        <a href="">RESEARCH</a>
+        <a href="">ARTEFACTS</a>
+        <a href="">FUTURE</a>
+      </div>
+
+    <div class="title-box">
+        <div class="title-text">
+            <h1>BI<span class="formula-alt">O</span> I<span class="formula-alt">N</span>TE<span class="formula-alt">R</span>FA<span class="formula-alt">C</span>ES!</h1>
+        </div>
+  
+   
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <section class="blue-class" id="about">
+        <div class="row">
+            <div class="column">
+                <h2>ABOUT</h2>
+            </div> 
+          
+            <div class="column" style="flex-grow: 3;">
+                <p>
+                 Is a project that exists within the intersection of man, nature and the machine. Speculative and set in a hybrid future, tangible and computational interactions can be facilitated through botanical matter as mediating interfaces. It aims to use notions of growth, decay and each human’s inherent biophilia to nurture direct, tactile relations with the environments around us.
+                </p>
+    
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse ipsum magni consequuntur excepturi quasi, maxime ad adipisci quibusdam architecto sit in, est eveniet. Molestiae quod nobis quos facere, itaque corrupti.
+                </p>
+    
+                <p>
+                    Sit maiores autem quisquam minima sed necessitatibus impedit molestias. Suscipit atque voluptate cumque beatae quidem.
+                </p>
+            </div> 
+          </div>
+   
+</section>
+    
+
+      <br>
+      <br>
+      <hr>
+      <br>
+      <br>
+
+
+      <section class="green-class" id="research">
+        <div class="row">
+            <div class="column">
+                <h2>RESEARCH</h2>
+            </div>
+            <div class="column" style="flex-grow: 3;">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam quisquam dicta, necessitatibus quasi aperiam alias libero laboriosam qui perferendis consequatur aut, earum fuga dolore id beatae amet iste inventore voluptatibus!
+                </p>
+
+            </div>
+        </div>
+
+
+        <figure>
+            <img src="./assets/images/sampleinfo-01.png" alt="">
+        </figure>
+
+        <div class="row">
+            <div class="column">
+                
+            </div>
+            <div class="column" style="flex-grow: 3;">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam quisquam dicta, necessitatibus quasi aperiam alias libero laboriosam qui perferendis consequatur aut, earum fuga dolore id beatae amet iste inventore voluptatibus!
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam quisquam dicta, necessitatibus quasi aperiam alias libero laboriosam qui perferendis consequatur aut, earum fuga dolore id beatae amet iste inventore voluptatibus!
+                </p>
+
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <hr>
+        <br>
+        <br>
+                
+        
+    </section>
+     
+    <section class="blue-class" id="artefacts">
+        <div class="row">
+            <div class="column">
+                <h2>ARTEFACTS</h2>
+            </div>
+            <div class="column" style="flex-grow: 3;">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ducimus similique et cum officiis ratione enim, nostrum consequuntur fuga, est voluptate deleniti accusantium? Repudiandae fuga quae architecto? Quo, officiis facilis.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="title-box" style="height: auto;">
+              
+                <button class="collapsible">
+                    ARTEFACT 1: TENDING AND CARING
+                </button>
+                <div class="content">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+                <button class="collapsible">
+                    ARTEFACT 2: GROWING AND LEARNING
+                </button>
+                <div class="content">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+                <button class="collapsible">
+                    ARTEFACT 3: DYING AND RETURNING
+                </button>
+                <div class="content">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <section class="green-class" id="future">
+
+    </section>
+
+
+ 
+ 
+
+    
+  
+    
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
+
+</body>
+</html>
